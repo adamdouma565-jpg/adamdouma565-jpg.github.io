@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f0e">
+<meta name="description" content="أخبار ليبيا من مصادر رسمية وقنوات ومواقع عالمية معروفة">
+<meta property="og:title" content="أخبار ليبيا">
+<title>أخبار ليبيا</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f4f1;--card:#fff;--ink:#141816;--mute:#667068;--line:#dcdfd9;--red:#c8102e;--green:#0a7a3d}
+[data-theme=dark]{--bg:#0d0f0e;--card:#171b19;--ink:#ecf0ed;--mute:#97a39b;--line:#262d29;--red:#ef5a6f;--green:#3fbf7a}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.7}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.hero{background:#0d0f0e;color:#fff;padding:18px 16px 0;position:relative}
+.flag{position:absolute;inset-inline:0;top:0;height:6px;background:linear-gradient(#c8102e 0 33%,#000 33% 66%,#0a7a3d 66%)}
+.wrap{max-width:760px;margin:auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:6px}
+h1{font-family:"Reem Kufi",serif;font-size:2.3rem;margin:0;line-height:1.2}
+.sub{margin:0 0 12px;color:#aab6ae;font-size:.92rem}
+.ib{border:1px solid #3a443f;background:transparent;color:#fff;width:40px;height:40px;border-radius:50%;font-size:1.1rem}
+.tick{overflow:hidden;border-top:1px solid #26302b;margin:0 -16px;padding:8px 0;white-space:nowrap;font-size:.9rem}
+.tick div{display:inline-flex;width:max-content;animation:mv 70s linear infinite}
+.tick span{padding-inline:22px;color:#d7e0da}.tick span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-inline-end:10px}
+@keyframes mv{to{transform:translateX(50%)}}
+.tool{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px}
+.row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.row::-webkit-scrollbar{display:none}
+input{width:100%;font:inherit;padding:9px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-bottom:8px}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);padding:5px 14px;border-radius:99px}
+.chip[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+.chip.r[aria-pressed=true]{background:var(--red);border-color:var(--red)}
+main{padding:12px 16px 24px}
+#stat{color:var(--mute);font-size:.85rem;margin:2px 0 10px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 12px;overflow:hidden;display:flex;gap:12px;padding:12px;border-inline-start:5px solid var(--c)}
+.card .img{flex:none;width:96px;height:96px;border-radius:10px;object-fit:cover;background:var(--line)}
+.card .body{min-width:0;flex:1}
+.card h3{margin:0;font-size:1rem;line-height:1.5}
+.card h3 a{color:inherit;text-decoration:none}
+.meta{color:var(--mute);font-size:.8rem}.meta b{color:var(--c)}
+.d{margin:4px 0 0;color:var(--mute);font-size:.9rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.open .d{-webkit-line-clamp:unset;display:block}
+.acts{display:flex;gap:6px;margin-top:6px}
+.acts button{border:1px solid var(--line);background:transparent;border-radius:99px;padding:1px 12px;font-size:.82rem;color:var(--mute)}
+.acts .on{color:var(--red);border-color:var(--red)}
+.card.big{flex-direction:column;padding:0;border-inline-start:0;border-top:5px solid var(--c)}
+.card.big .img{width:100%;height:190px;border-radius:0}
+.card.big .body{padding:12px 14px 14px}.card.big h3{font-size:1.25rem}
+.o{--c:var(--green)}.c{--c:var(--red)}.s{--c:#2f6fa3}
+.sk{height:96px;border-radius:14px;margin-bottom:12px;background:linear-gradient(90deg,var(--line) 25%,var(--card) 50%,var(--line) 75%);background-size:200% 100%;animation:sh 1.3s infinite}
+@keyframes sh{to{background-position:-200% 0}}
+h2{font-family:"Reem Kufi",serif;font-size:1.15rem;margin:26px 0 8px}
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;color:var(--ink);text-decoration:none}
+.links small{display:block;color:var(--mute)}
+footer{background:#0d0f0e;color:#cfd8d2;padding:22px 16px 28px;text-align:center;font-size:.92rem}
+footer b{color:#fff;font-size:1.05rem}footer a{color:#7fd6a5}
+#up{position:fixed;inset-inline-start:14px;bottom:18px;display:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--green);color:#fff;font-size:1.2rem;z-index:9}
+html{font-size:calc(16px*var(--z,1))}
+.wx{margin:0 0 8px;min-height:30px}.wx button{border:1px solid #3a443f;background:transparent;color:#fff;border-radius:99px;padding:2px 14px;font-size:.9rem}
+.card.nw h3::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-inline-end:6px}
+.chip.tp{font-size:.82rem;padding:2px 11px}
+select{flex:none;font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 10px;max-width:150px}
+#stat.off{color:var(--red)}
+@media (prefers-reduced-motion:reduce){.tick div,.sk{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="flag"></div><div class="wrap">
+  <div class="top"><h1>أخبار ليبيا</h1><span><button class="ib" id="fz" aria-label="حجم الخط">Aa</button> <button class="ib" id="th" aria-label="تبديل الوضع الليلي">◐</button></span></div>
+  <p class="sub" id="sub">مصادر رسمية وقنوات ومواقع عالمية معروفة</p>
+  <p class="wx" id="wx"></p>
+  <div class="tick"><div id="tk"></div></div>
+</div></header>
+<div class="tool"><div class="wrap">
+  <input id="q" type="search" placeholder="ابحث في الأخبار…" aria-label="بحث">
+  <div class="row" id="chips"></div>
+  <div class="row" id="tp" style="margin-top:6px"></div>
+</div></div>
+<main class="wrap">
+  <div id="stat" aria-live="polite"></div><div id="list"></div>
+  <h2>روابط مباشرة لمصادر أخرى</h2><div class="links" id="links"></div>
+</main>
+<footer><div class="wrap">
+  <b id="on"></b><br><a id="oe"></a><br><a id="og" target="_blank" rel="noopener">GitHub</a>
+  <div style="margin-top:10px;color:#8c9a92;font-size:.8rem">الأخبار والصور ملك للمصادر الأصلية. <a href="privacy.html">سياسة الخصوصية</a></div>
+</div></footer>
+<button id="up" aria-label="أعلى">↑</button>
+<script>
+// عدّل هذه البيانات فقط:
+const OWNER = {name:"Adam idriss Altbawe", email:"adamdouma565@Gmail.com", github:"https://github.com/adamdouma565-jpg"};
+
+const SOURCES = [
+  {n:"أخبار الأمم المتحدة",t:"o",feed:"https://news.un.org/feed/subscribe/ar/news/all/rss.xml"},
+  {n:"UN News",t:"o",feed:"https://news.un.org/feed/subscribe/en/news/all/rss.xml"},
+  {n:"الجزيرة",t:"c",feed:"https://www.aljazeera.net/xml/rss/all.xml"},
+  {n:"Al Jazeera English",t:"c",feed:"https://www.aljazeera.com/xml/rss/all.xml"},
+  {n:"بي بي سي عربي",t:"c",feed:"https://feeds.bbci.co.uk/arabic/rss.xml"},
+  {n:"BBC Africa",t:"c",feed:"https://feeds.bbci.co.uk/news/world/africa/rss.xml"},
+  {n:"فرانس 24",t:"c",feed:"https://www.france24.com/ar/rss"},
+  {n:"دويتشه فيله",t:"c",feed:"https://rss.dw.com/xml/rss-ar-all"},
+  {n:"Libya Herald",t:"s",feed:"https://libyaherald.com/feed/"},
+  {n:"وكالة الأنباء الليبية",t:"o",site:"https://lana.gov.ly",d:"رسمي، محلي"},
+  {n:"بعثة الأمم المتحدة (UNSMIL)",t:"o",site:"https://unsmil.unmissions.org/ar",d:"رسمي، دولي"},
+  {n:"بوابة الوسط",t:"s",site:"https://alwasat.ly",d:"موقع محلي"},
+  {n:"Libya Observer",t:"s",site:"https://libyaobserver.ly",d:"موقع محلي"},
+  {n:"رويترز - ليبيا",t:"s",site:"https://www.reuters.com/world/africa/",d:"موقع عالمي"}
+];
+const LIBYA = /ليبيا|ليبي|طرابلس|بنغازي|سرت|مصراتة|طبرق|الدبيبة|حفتر|المنفي|Libya|Libyan|Tripoli|Benghazi|Dbeibah|Haftar/i;
+const TABS = {all:"الكل",o:"رسمية",c:"قنوات",s:"مواقع",saved:"المحفوظات"};
+const NAMES = {o:"رسمي",c:"قناة",s:"موقع"};
+const $ = id => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; };
+const strip = h => { const d = document.createElement("div"); d.innerHTML = h || ""; return (d.textContent || "").trim(); };
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch(e){ return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+let tab = store.get("ln-tab", "all"), onlyLibya = store.get("ln-libya", true), query = "", topic = "", lang = store.get("ln-lang", ""), srcF = "", zoom = store.get("ln-z", 1), city = store.get("ln-city", "طرابلس");
+let saved = store.get("ln-saved", []), failed = [], lastVisit = store.get("ln-seen", 0);
+let items = store.get("ln-cache", []).map(x => ({...x, date: new Date(x.date)})), loading = !items.length, offline = false;
+
+// الوضع الليلي
+let theme = store.get("ln-theme", matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
+const applyTheme = () => document.documentElement.dataset.theme = theme;
+$("th").onclick = () => { theme = theme === "dark" ? "light" : "dark"; store.set("ln-theme", theme); applyTheme(); };
+applyTheme();
+const applyZoom = () => document.documentElement.style.setProperty("--z", zoom);
+$("fz").onclick = () => { zoom = zoom >= 1.25 ? 1 : zoom + 0.125; store.set("ln-z", zoom); applyZoom(); };
+applyZoom();
+
+const TOPICS = {
+ "سياسة":/سياس|حكومة|برلمان|انتخاب|المجلس|الرئاسي|النواب|حوار|government|politic|election|parliament|council|talks/i,
+ "نفط واقتصاد":/نفط|غاز|اقتصاد|مصرف|ميزاني|دينار|استثمار|oil|gas|econom|bank|budget|dinar|invest|NOC/i,
+ "أمن":/أمن|اشتباك|مسلح|قوات|عسكري|جيش|security|clash|armed|military|force|attack/i,
+ "هجرة":/هجرة|مهاجر|لاجئ|قارب|migrant|refugee|migration|boat/i,
+ "رياضة":/كرة|رياضة|دوري|منتخب|football|sport|league|match|cup/i
+};
+const isAr = s => /[\u0600-\u06FF]/.test(s);
+const ago = d => { const m = Math.round((Date.now() - d) / 60000); return m < 1 ? "الآن" : m < 60 ? "منذ " + m + " د" : m < 1440 ? "منذ " + Math.round(m / 60) + " س" : d.toLocaleDateString("ar", {dateStyle: "medium"}); };
+
+function chips() {
+  const row = $("chips"); row.textContent = "";
+  for (const k in TABS) {
+    const b = el("button", "chip", TABS[k] + (k === "saved" ? " (" + saved.length + ")" : ""));
+    b.setAttribute("aria-pressed", tab === k);
+    b.onclick = () => { tab = k; store.set("ln-tab", k); chips(); render(); };
+    row.append(b);
+  }
+  const f = el("button", "chip r", "ليبيا فقط"); f.setAttribute("aria-pressed", onlyLibya);
+  f.onclick = () => { onlyLibya = !onlyLibya; store.set("ln-libya", onlyLibya); chips(); render(); };
+  const lg = el("button", "chip", lang === "ar" ? "عربي" : lang === "en" ? "English" : "كل اللغات");
+  lg.onclick = () => { lang = lang === "" ? "ar" : lang === "ar" ? "en" : ""; store.set("ln-lang", lang); chips(); render(); };
+  const sel = el("select"); sel.setAttribute("aria-label", "المصدر");
+  [["", "كل المصادر"], ...[...new Set(items.map(i => i.src))].sort().map(s => [s, s])].forEach(([v, t]) => { const o = el("option", "", t); o.value = v; o.selected = v === srcF; sel.append(o); });
+  sel.onchange = () => { srcF = sel.value; render(); };
+  const r = el("button", "chip", "↻ تحديث"); r.onclick = () => load();
+  row.append(f, lg, sel, r);
+  const tp = $("tp"); tp.textContent = "";
+  for (const k in TOPICS) { const b = el("button", "chip tp", k); b.setAttribute("aria-pressed", topic === k); b.onclick = () => { topic = topic === k ? "" : k; chips(); render(); }; tp.append(b); }
+}
+
+function card(i, big) {
+  const c = el("article", "card " + i.t + (big ? " big" : ""));
+  if (lastVisit && i.date.getTime() > lastVisit) c.classList.add("nw");
+  if (i.img) { const im = el("img", "img"); im.src = i.img; im.alt = ""; im.loading = "lazy"; im.referrerPolicy = "no-referrer"; im.onerror = () => im.remove(); c.append(im); }
+  const body = el("div", "body");
+  const h = el("h3"); const a = el("a", "", i.title); a.href = i.link; a.target = "_blank"; a.rel = "noopener"; h.append(a);
+  const m = el("div", "meta"); m.title = i.date.toLocaleString("ar"); m.append(el("b", "", i.src), " · " + NAMES[i.t] + " · " + ago(i.date));
+  body.append(h, m);
+  if (i.desc) { const d = el("p", "d", i.desc); d.onclick = () => c.classList.toggle("open"); body.append(d); }
+  const acts = el("div", "acts");
+  const isSaved = () => saved.some(s => s.link === i.link);
+  const sv = el("button", isSaved() ? "on" : "", isSaved() ? "★ محفوظ" : "☆ حفظ");
+  sv.onclick = () => {
+    saved = isSaved() ? saved.filter(s => s.link !== i.link) : [{...i, date: i.date.toISOString()}, ...saved];
+    store.set("ln-saved", saved); chips(); render();
+  };
+  const sh = el("button", "", "مشاركة");
+  sh.onclick = async () => {
+    try { if (navigator.share) await navigator.share({title: i.title, url: i.link}); else { await navigator.clipboard.writeText(i.link); sh.textContent = "تم النسخ"; } } catch(e){}
+  };
+  acts.append(sv, sh); body.append(acts); c.append(body);
+  return c;
+}
+
+function render() {
+  const list = $("list"); list.textContent = "";
+  if (loading) { for (let k = 0; k < 5; k++) list.append(el("div", "sk")); $("stat").textContent = "جارٍ التحميل…"; return; }
+  let pool = tab === "saved" ? saved.map(s => ({...s, date: new Date(s.date)})) : items;
+  const q = query.trim().toLowerCase();
+  const shown = pool.filter(i => (tab === "all" || tab === "saved" || i.t === tab)
+      && (tab === "saved" || !onlyLibya || i.libya)
+      && (!q || (i.title + " " + i.desc).toLowerCase().includes(q))
+      && (!lang || (lang === "ar") === isAr(i.title))
+      && (!srcF || i.src === srcF)
+      && (!topic || TOPICS[topic].test(i.title + " " + i.desc)))
+    .sort((a, b) => b.date - a.date).slice(0, 80);
+  shown.forEach((i, n) => list.append(card(i, n === 0 && i.img)));
+  let s = shown.length + " خبر";
+  if (!shown.length) s = tab === "saved" ? "لا توجد أخبار محفوظة بعد. اضغط ☆ على أي خبر لحفظه." : onlyLibya ? "لا توجد أخبار عن ليبيا الآن. أوقف «ليبيا فقط» لرؤية كل الأخبار." : "لا توجد نتائج.";
+  if (failed.length && tab !== "saved") s += " · تعذّر تحميل: " + failed.join("، ");
+  $("stat").textContent = (offline ? "غير متصل · عرض آخر أخبار محفوظة · " : "") + s; $("stat").classList.toggle("off", offline);
+}
+
+function ticker() {
+  const top = items.filter(i => i.libya).sort((a, b) => b.date - a.date).slice(0, 8);
+  const tk = $("tk"); tk.textContent = "";
+  if (!top.length) { $("tk").parentElement.style.display = "none"; return; }
+  $("tk").parentElement.style.display = "";
+  for (let k = 0; k < 2; k++) top.forEach(i => tk.append(el("span", "", i.title)));
+}
+
+const firstImg = h => { const m = /<img[^>]+src=["']([^"']+)/i.exec(h || ""); return m ? m[1] : ""; };
+async function fetchFeed(src) {
+  const r = await fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(src.feed));
+  const j = await r.json(); if (j.status !== "ok") throw new Error("feed");
+  return j.items.map(x => {
+    const desc = strip(x.description), enc = x.enclosure && /image/i.test(x.enclosure.type || "") ? x.enclosure.link : "";
+    return {src: src.n, t: src.t, title: strip(x.title), link: x.link, desc: desc.slice(0, 300),
+      img: x.thumbnail || enc || firstImg(x.content) || firstImg(x.description),
+      date: new Date((x.pubDate || "").replace(" ", "T") + "Z"), libya: LIBYA.test(x.title + " " + desc)};
+  });
+}
+
+async function load(silent) {
+  if (!items.length) loading = true; failed = []; if (!silent) render();
+  const feeds = SOURCES.filter(s => s.feed);
+  const res = await Promise.allSettled(feeds.map(fetchFeed));
+  const seen = new Set(), fresh = [];
+  res.forEach((r, i) => r.status === "fulfilled" ? r.value.forEach(x => { if (!seen.has(x.link)) { seen.add(x.link); fresh.push(x); } }) : failed.push(feeds[i].n));
+  const ok = fresh.filter(i => !isNaN(i.date));
+  offline = !ok.length;
+  if (ok.length) { items = ok; store.set("ln-cache", items.slice(0, 120).map(i => ({...i, date: i.date.toISOString()}))); }
+  loading = false; ticker(); chips(); render();
+  $("sub").textContent = "آخر تحديث " + new Date().toLocaleTimeString("ar", {timeStyle:"short"}) + " · مصادر رسمية وقنوات ومواقع عالمية";
+}
+
+$("q").oninput = e => { query = e.target.value; if (!loading) render(); };
+$("on").textContent = OWNER.name;
+$("oe").textContent = OWNER.email; $("oe").href = "mailto:" + OWNER.email;
+$("og").href = OWNER.github; $("og").textContent = "صفحتي على GitHub";
+for (const s of SOURCES.filter(x => x.site)) {
+  const a = el("a", s.t); a.href = s.site; a.target = "_blank"; a.rel = "noopener";
+  a.append(el("span", "", s.n), el("small", "", s.d)); $("links").append(a);
+}
+const up = $("up"); up.onclick = () => scrollTo({top: 0, behavior: "smooth"});
+addEventListener("scroll", () => up.style.display = scrollY > 500 ? "block" : "none", {passive: true});
+chips(); ticker(); render(); load();
+const CITIES = {"طرابلس":[32.89,13.19],"بنغازي":[32.12,20.07],"سبها":[27.04,14.43]};
+const WX = c => c === 0 ? "☀️" : c < 4 ? "⛅" : c < 50 ? "🌫️" : c < 70 ? "🌧️" : c < 80 ? "❄️" : c < 90 ? "🌦️" : "⛈️";
+async function weather() {
+  const b = el("button", "", city + " …"); $("wx").textContent = ""; $("wx").append(b);
+  b.onclick = () => { const k = Object.keys(CITIES); city = k[(k.indexOf(city) + 1) % k.length]; store.set("ln-city", city); weather(); };
+  try {
+    const [la, lo] = CITIES[city];
+    const j = await (await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + la + "&longitude=" + lo + "&current=temperature_2m,weather_code")).json();
+    b.textContent = WX(j.current.weather_code) + " " + city + " " + Math.round(j.current.temperature_2m) + "°م";
+  } catch (e) { b.textContent = city; }
+}
+weather();
+setInterval(() => { if (!document.hidden) load(true); }, 600000);
+addEventListener("pagehide", () => store.set("ln-seen", Date.now()));
+document.addEventListener("visibilitychange", () => { if (document.hidden) store.set("ln-seen", Date.now()); });
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+</script>
+</body>
+</html>
