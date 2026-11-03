@@ -2,7 +2,7 @@
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
         "namespace": "android_app",
-        "package_name": "io.github.adamdouma565_jpg.twa",
-        "sha256_cert_fingerprints": ["42:39:0B:29:B2:F7:3C:1D:7B:AA:9A:29:6C:6B:48:59:52:E2:45:3E:7E:AF:28:01:77:7A:6E:38:F2:90:B1:AF"]
+        "package_name": "io.github.adamdouma565_jpg.gameports",
+        "sha256_cert_fingerprints": ["10:F4:79:B1:30:4D:C8:EB:73:4F:7E:05:90:D1:61:66:A9:25:79:51:1D:D6:97:D6:2B:53:69:D7:BB:DC:F2:2E"]
       }
-    }]
+    }] 
